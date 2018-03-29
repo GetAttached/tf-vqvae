@@ -10,6 +10,7 @@ from model import VQVAE, _imagenet_arch, PixelCNN
 import sys
 sys.path.append('slim_models/research/slim')
 from datasets import imagenet
+
 slim = tf.contrib.slim
 def _build_batch(dataset,batch_size,num_threads):
     with tf.device('/cpu'):
